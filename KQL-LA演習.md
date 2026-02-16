@@ -65,7 +65,7 @@ while attempts > 0
         continue
 
     guess = int(guess)
-    attempts=attempts-1
+    attempts=attempts-5
 
     if guess==secret:
         print(f"正解です！答えは {secret} でした。")
