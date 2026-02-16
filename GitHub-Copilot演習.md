@@ -30,22 +30,24 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
       2. 「Start free trial」または「無料トライアルを開始」をクリックします。<br>
       3. 必要に応じて支払い情報を入力します（トライアル期間中は請求されません）。<br>
       4. トライアルの有効化が完了したら、Visual Studio Code などのエディタで GitHub Copilot を利用できます。<br><br>
+      <strong>Visual Studio Code で GitHub Copilot をセットアップする方法</strong><br>
+      1. Visual Studio Code をインストールまたは更新します。<br>
+      2. 拡張機能パネルを開き（Ctrl+Shift+X または Cmd+Shift+X）、「GitHub Copilot」を検索します。<br>
+      3. 「GitHub Copilot」拡張機能をインストールします。<br>
+      4. インストール後、GitHub アカウントでサインインするよう促されます。指示に従ってサインインを完了します。<br>
+      5. セットアップ完了後、コード編集時に Copilot の提案が表示されます。<br><br>
       ※ 既にアカウントや Copilot トライアルをお持ちの場合は、この手順をスキップしてください。
     </td>
   </tr>
 </table>
 
 
-# ☁️Azureのアカウント作成☁️
-❗既にアカウントをお持ちの方は次のセクションに進んでください。
-
-# 演習：Microsoft Sentinel用の KQL
-
-### 以下のクエリ練習によって、ハンズオンでKQLの勉強ができる。Log Analyticsのデモ ワークスペースによって、演習のクエリはたまにエラーが発生する。パラメーターの調整や Copilot 等の生成AIツールでトラブルシューティングを行ってください。
-
+# サンプルコード☁️
+❗このコードはこのまま正解ではないです
 
 ## **1️⃣**
 以下のクエリをコピーして、クエリウィンドウに使用してください
+または、https://github.com/joshjones-jp/JP_GitHub_Copilot/blob/main/sampleapp.py   からダウンロード
 
 
 ```python
