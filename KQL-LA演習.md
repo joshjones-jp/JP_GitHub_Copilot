@@ -11,14 +11,29 @@ GitHub は、ソフトウェア開発者やチームがコードを管理し、�
 ## GitHub Copilot
 GitHub Copilot は、AI を活用したコード補完ツールで、Visual Studio Code や GitHub などの開発環境で利用できます。 Copilot は自然言語のコメントやコードの一部から、次に書くべきコードを提案したり、関数やアルゴリズムの自動生成を支援します。 開発者の生産性向上や学習支援に役立ち、複雑なロジックや繰り返し作業の効率化を実現します。 Copilot は GitHub 上の公開リポジトリのコードやドキュメントを学習しており、幅広い言語やフレームワークに対応しています。
 
+# 🧩演習：クエリ作成チャレンジ🧩
+
 <table>
   <tr>
-    <th>⭐注目⭐</th>
+    <th>⭐準備⭐</th>
   </tr>
   <tr>
-    <td>Microsoft Sentinel では、"Microsoft Sentinel ワークスペース" という用語が使用されています。 このワークスペースは、Log Analytics ワークスペースと同じですが、Microsoft Sentinel で使用できるようになっています。 ワークスペース内のすべてのデータには、Microsoft Sentinel の価格が適用されます。</td>
+    <td>
+      <strong>GitHub アカウントの作成手順</strong><br>
+      まだ GitHub アカウントをお持ちでない場合は、以下の手順で作成してください。<br><br>
+      1. <a href="https://github.com/" target="_blank">https://github.com/</a> にアクセスします。<br>
+      2. 画面右上の「Sign up」または「サインアップ」をクリックします。<br>
+      3. メールアドレス、ユーザー名、パスワードを入力し、アカウントを作成します。<br>
+      4. メール認証を行い、アカウント登録を完了します。<br><br>
+      <strong>GitHub Copilot トライアルの開始方法</strong><br>
+      1. GitHub アカウントでログインした状態で、<a href="https://github.com/features/copilot" target="_blank">GitHub Copilot のページ</a>にアクセスします。<br>
+      2. 「Start free trial」または「無料トライアルを開始」をクリックします。<br>
+      3. 必要に応じて支払い情報を入力します（トライアル期間中は請求されません）。<br>
+      4. トライアルの有効化が完了したら、Visual Studio Code などのエディタで GitHub Copilot を利用できます。<br><br>
+      ※ 既にアカウントや Copilot トライアルをお持ちの場合は、この手順をスキップしてください。
+    </td>
   </tr>
-</table>  
+</table>
 
 
 # ☁️Azureのアカウント作成☁️
@@ -360,104 +375,4 @@ SecurityEvent
 
 
 
-# 🧩演習：クエリ作成チャレンジ🧩
-
-
-このチャレンジでは、クエリがまだ完了していない。
-コメントを読んで、タスクを実施するためにクエリを編集してください。
-上記以外の演算子を使用してもいいので、以下のリソースリンクにアクセスしてください。
-
-<a href="https://learn.microsoft.com/ja-jp/kusto/query/tutorials/learn-common-operators?view=azure-data-explorer" target="_blank">https://learn.microsoft.com/ja-jp/kusto/query/tutorials/learn-common-operators?view=azure-data-explorer</a>
-
-
-## **1️⃣**
-
-
-<div class="code-container">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<pre><code class="kusto">
-// SecurityEvent テーブルでのログイン失敗を見つける
-SecurityEvent
-| where _______________ == "Account logon failure"
-| project TimeGenerated, Account, _______________
-</code></pre>
-</div>
-
-
-## **2️⃣**
-
-
-<div class="code-container">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<pre><code class="kusto">
-// SecurityEvent テーブルでのソース別のイベント数をカウントする
-SecurityEvent
-| summarize _______________ by _______________
-</code></pre>
-</div>
-
-
-## **3️⃣**
-
-
-<div class="code-container">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<pre><code class="kusto">
-// SecurityEvent テーブルで過去1週間以内の特定の時間範囲で発生したイベントをフィルタリングする
-SecurityEvent
-| where TimeGenerated > ago(7d)
-| where _______________ between (time(08:00:00) and time(18:00:00))
-</code></pre>
-</div>
-
-
-## **4️⃣**
-
-
-<div class="code-container">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<pre><code class="kusto">
-// SecurityEvent テーブルで特定のユーザーが短期間に複数回の失敗したログイン試行を行った場合の不正アクセス試行を特定する
-SecurityEvent
-| where EventID == _______________
-| summarize _______________ by bin(TimeGenerated, 1h), _______________
-| where _______________ > 5
-| project _______________, _______________, _______________
-</code></pre>
-</div>
-
-
-## **5️⃣**
-
-
-<div class="code-container">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<pre><code class="kusto">
-// SecurityEvent テーブルで異常なネットワークアクティビティを検出し、特定のIPアドレスからの異常なイベントを見つける
-SecurityEvent
-| where _______________ == 3
-| summarize _______________ by _______________
-| join kind=inner (SecurityEvent | where _______________ | summarize count() by IPAddress) on _______________
-| where _______________ > 10
-| project _______________, _______________, _______________
-</code></pre>
-</div>
-
-
-## 回答例
-
-全て完了してから、回答例を確認してください
-
-
-<a href="KQLチャレンジ回答例.html" target="_blank">KQLチャレンジ回答例</a>
 
