@@ -47,7 +47,7 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
 
 ## **1️⃣**
 以下のクエリをコピーして、クエリウィンドウに使用してください
-または、https://github.com/joshjones-jp/JP_GitHub_Copilot/blob/main/sampleapp.py   からダウンロード
+または、<a href="https://github.com/joshjones-jp/JP_GitHub_Copilot/blob/main/sampleapp.py" target="_blank">https://github.com/joshjones-jp/JP_GitHub_Copilot/blob/main/sampleapp.py</a>   からダウンロード
 
 
 ```python
