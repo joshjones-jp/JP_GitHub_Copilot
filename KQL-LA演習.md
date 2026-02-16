@@ -30,11 +30,7 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
 
 左側にある無料アカウントのオプションを選択
 
-<img src="images/KQL1.png" alt="Azureアカウント" style="width:950px; height:500px;">
-
 プロファイル情報を入力する
-
-<img src="images/KQL2.png" alt="Azureアカウント" style="width:950px; height:500px;">
 
 クレジットカードの情報を入力する
 アカウント登録してから、1回アカウントに１００円ぐらいの料金が発生します。これはカードが有効か確認するためにあって、すぐ同じ金額が自動的に返されます。
@@ -48,8 +44,6 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
   </tr>
 </table> 
 
-<img src="images/KQL3.png" alt="Azureアカウント" style="width:950px; height:500px;">
-
 
 # 🔎Log Analyticsデモにアクセス🛡️
 
@@ -59,9 +53,6 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
 <a href="https://aka.ms/lademo" target="_blank">https://aka.ms/lademo</a>
 
 右上の青色バッテン ✖ を押してください。
-
-
-<img src="images/KQL4.png" alt="LADemo" style="width:950px; height:500px;">
 
 
 ## ツールの案内と説明
@@ -92,9 +83,6 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
 1. **クエリの形式設定**: 選択したテキストを読みやすく配置する
 
 
-<img src="images/KQL5.png" alt="LADemo" style="width:950px; height:500px;">
-
-
 使い方2️⃣：左側サイド バー
 
 1. **テーブル**: ワークスペースに含まれるテーブル
@@ -104,8 +92,6 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
 1. **関数**:　コマンドのように、他のLog Analyticsのログ クエリに対して使えるクエリ。
 
 1. **テーブル一覧**: カテゴリーを開いて、ワークスペースに含まれているテーブルの確認ができる。Securityを開いてみましょう。
-
-<img src="images/KQL6.png" alt="LADemo" style="width:950px; height:500px;">
 
 使い方3️⃣：結果ウィンドウ
 
@@ -120,9 +106,6 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
 1. **青色矢印**: search in でテーブルをフィルターする。A*利用すると、Ａで始まるテーブル名が選択される。これで、AVSSyslogがクエリされた
 
 1. **オレンジ色矢印**: errというテキストが含まれる行が検索される
-
-
-<img src="images/KQL7.png" alt="LADemo" style="width:950px; height:500px;">
 
 
 
@@ -477,3 +460,4 @@ SecurityEvent
 
 
 <a href="KQLチャレンジ回答例.html" target="_blank">KQLチャレンジ回答例</a>
+
