@@ -52,12 +52,8 @@ GitHub Copilot は、AI を活用したコード補完ツールで、Visual Stud
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<pre><code class="kusto">
-let timeOffset = 7d;
-let discardEventId = 4688;
-SecurityEvent
-| where TimeGenerated > ago(timeOffset*2) and TimeGenerated < ago(timeOffset)
-| where EventID != discardEventId
+<pre><code class="python">
+import random secret = random.randint(1, 50) attempts = 5 print("Guess the Number!") print("I'm thinking of a number between 1 and 50.") print("You have", attempts, "attempts.\n") while attempts > 0: guess = input("Enter your guess: ") if not guess.isdigit(): print("Please enter a valid number.\n") continue guess = int(guess) attempts -= 1 if guess == secret: print("You got it! The number was", secret) break elif guess < secret: print("Too low!\n") else: print("Too high!\n") if attempts == 0 and guess != secret: print("Out of attempts! The number was", secret)
 </code></pre>
 </div>
 
